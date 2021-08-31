@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!-- Link Boostrap  -->
-    <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+    <title>CV Của Long Thành Vũ</title>
 
     <!-- Link Jquery CDN -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> --> 
@@ -22,22 +19,103 @@
     <link rel="stylesheet" href="./includes/css/style.css">
 </head>
 <body>  
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="menu">
-                    <button id="btn1"> Bấm Đi </button>
-                </div>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav-logo"> Vũ Thành Long </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active-link">
+                            <i class="nav-icon fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i> Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">
+                            <i class="nav-icon fas fa-book"></i> Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <i class="nav-icon fas fa-receipt"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">
+                            <i class="nav-icon fas fa-briefcase"></i> Experience
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificates" class="nav-link">
+                            <i class="nav-icon fas fa-award"></i> Certificates
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#references" class="nav-link">
+                            <i class="nav-icon fas fa-external-link-square-alt"></i> References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-th-large"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main bd-container">
+        <div class="resume">
+            <div class="resume-left">
+                <section class="home" id="home">
+                    <div class="home-container section bd-grid">
+                        <div class="home-data db-grid">
+                            <img src="./includes/images/Long đeo kính.jpg" alt="" class="home-img">
 
+                            <h1 class="home-title">
+                                Long Thanh Vu
+                            </h1>
+                            <h3 class="home-profession">
+                                Web Developer
+                            </h3>
+                            <div>
+                                <a download="" href="" class="home-button-pdf">Download</a>
+                            </div>
+                        </div>
+                        <div class="home-address bd-grid">
+                            <span class="home-imformation">
+                                <i class=" home-icon fas fa-map-marker-alt"></i> Bach Khoa - Hai Ba Trung - Ha Noi
+                            </span>
+                            <span class="home-imformation">
+                                <i class=" home-icon fas fa-envelope"></i> longthanhvu1603hn2@gmail.com
+                            </span>
+                            <span class="home-imformation">
+                                <i class=" home-icon fas fa-phone"></i> 0965899363
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social-container bd-grid">
+                        <a href="#" target="_blank" class="social-link">
+                            <i class=" social-icon fab fa-facebook"></i>FaceBook
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class=" social-icon fab fa-instagram"></i>Instagram
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class=" social-icon fab fa-github"></i>GitHub
+                        </a>
+                    </div>
+                </section>
             </div>
-            <div class="col-md-6">
-                <div class="menu">
-                    <h1 class="text"> Tôi Đây </h1>
-                </div>
-            </div>
+            <div class="resume-right"></div>
         </div>
-    </div>
-
-<script src="./includes/js/app.js"></script>
+    </main>
+    <script src="./includes/js/app.js"></script>
 </body>
 </html>
