@@ -58,3 +58,38 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*==================== REDUCE THE SIZE AND PRINT ON AN A4====================*/ 
+function scaleCv(){
+    document.body.classList.add('scale-cv')
+}
+
+/*==================== REDUCE THE SIZE WHEN THE CV IS DOWNLOADED ====================*/ 
+function removeScale(){
+    document.body.classList.remove('scale-cv')
+}
+
+/*==================== Download PDF ====================*/ 
+let areaCv = document.getElementById('area-cv')
+
+let resumeButton = document.getElementById('resume-button')
+
+let opt = {
+    margin:       1,
+    filename:     'myResume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+};
+
+function generateResume(){
+    html2pdf(areaCv, opt)
+}
+
+resumeButton.addEventListener('click', () =>{
+    scaleCv()
+
+    generateResume()
+
+    setTimeout(removeScale, 5000)
+})
