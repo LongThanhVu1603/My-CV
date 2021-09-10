@@ -77,20 +77,20 @@ let resumeButton = document.getElementById('resume-button')
 let opt = {
     margin:       1,
     filename:     'myResume.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
+    image:        { type: 'pdf', quality: 0.98 },
     html2canvas:  { scale: 2 },
     jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
 };
 
 function generateResume(){
-    html2pdf(areaCv, opt)
-    // window.print();
+    // html2pdf(areaCv, opt)
+    window.print();
 }
 
 resumeButton.addEventListener('click', () =>{
     scaleCv()
-
-    generateResume()
+    // window.print();
+    // generateResume()
 
     setTimeout(removeScale, 5000)
 })
