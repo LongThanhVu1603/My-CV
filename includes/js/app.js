@@ -79,8 +79,7 @@ const opt = {
     filename:     'myResume.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
-    jsPDF:        { unit: 'px', format: 'a4', orientation: 'portrait' },
-    pagebreak: { after: '.page-break' }    
+    jsPDF:        { format: 'a4', orientation: 'portrait' }, 
 };
 
 function generateResume(){
