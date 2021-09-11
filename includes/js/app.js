@@ -70,27 +70,28 @@ function removeScale(){
 }
 
 /*==================== Download PDF ====================*/ 
-let areaCv = document.getElementById('area-cv')
+const areaCv = document.getElementById('area-pdf')
 
-let resumeButton = document.getElementById('resume-button')
+const resumeButton = document.getElementById('resume-button')
 
-let opt = {
-    margin:       1,
+const opt = {
+    margin:       0,
     filename:     'myResume.pdf',
-    image:        { type: 'pdf', quality: 0.98 },
-    html2canvas:  { scale: 2 },
-    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        { unit: 'px', format: 'a4', orientation: 'portrait' },
+    pagebreak: { after: '.page-break' }    
 };
 
 function generateResume(){
-    // html2pdf(areaCv, opt)
-    window.print();
+    html2pdf(areaCv, opt);
+    // window.print();
 }
 
 resumeButton.addEventListener('click', () =>{
     scaleCv()
-    // window.print();
-    // generateResume()
+
+    generateResume()
 
     setTimeout(removeScale, 5000)
 })
