@@ -479,7 +479,8 @@ body.scale-cv{
 }
 
 .profile-description{
-    text-align: center;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .education-content,
