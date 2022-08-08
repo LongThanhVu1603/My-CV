@@ -94,3 +94,4 @@ resumeButton.addEventListener('click', () =>{
 
     setTimeout(removeScale, 5000)
 })
+
