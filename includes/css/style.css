@@ -481,6 +481,7 @@ body.scale-cv{
 .profile-description{
     text-align: justify;
     hyphens: auto;
+    letter-spacing: normal;
 }
 
 .education-content,
